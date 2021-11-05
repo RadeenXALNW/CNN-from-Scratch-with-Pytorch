@@ -14,5 +14,8 @@
 
 ### We have to calculate the derivative of the loss with respect of weight and biases. We have to backpropagate the loss where we can calculate it. L=-summation(Yi log(yi)).Which is cross entropy loss. where i=1 from c where c is class. Logits are transforming using probability. 
 
-### yi=e^zi/summation(e^zk)
-### zl=summation(wjlxj) which is softmax transfar
+### yi=e^zi/summation(e^zk) which is softmax transfar
+### zl=summation(wjlxj) 
+
+Now we want to calculate loss with respect to it's weight. We can achieve that using chain rule
+∂L/∂wjl=sum(j=1 to output)sum(l=1 to class) {[∂l/∂zl) (∂zl/∂wjl)
