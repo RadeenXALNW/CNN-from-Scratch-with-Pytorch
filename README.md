@@ -17,4 +17,7 @@
 ### yi=e^zi/summation(e^zk) which is softmax transfar
 ### zl=summation(wjlxj) 
 
-### Now we want to calculate loss with respect to it's weight. We can achieve that using chain rule ∂L/∂wjl=sum(j=1 to output)sum(l=1 to class) {[∂l/∂zl) (∂zl/∂wjl)
+### Now we want to calculate loss with respect to it's weight. We can achieve that using chain rule ∂L/∂wjl=sum(j=1 to output)sum(l=1 to class) {[∂l/∂zl) (∂zl/∂wjl) where (∂l/∂zl)=((∂l/∂yi) (∂yi/∂zi) (∂zi/∂w)
+### first we want to calculate the softmax derivative as backward propagation then the inner layers. where two case can happen if i=l or if i not equal to l which means we are looking for other nodes. We want calculate these derivative
+
+
