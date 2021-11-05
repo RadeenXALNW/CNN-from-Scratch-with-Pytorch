@@ -17,5 +17,4 @@
 ### yi=e^zi/summation(e^zk) which is softmax transfar
 ### zl=summation(wjlxj) 
 
-Now we want to calculate loss with respect to it's weight. We can achieve that using chain rule
-∂L/∂wjl=sum(j=1 to output)sum(l=1 to class) {[∂l/∂zl) (∂zl/∂wjl)
+### Now we want to calculate loss with respect to it's weight. We can achieve that using chain rule ∂L/∂wjl=sum(j=1 to output)sum(l=1 to class) {[∂l/∂zl) (∂zl/∂wjl)
