@@ -3,7 +3,7 @@
 ### Want to train a 10 class classification dataset (STL-10) from complete scratch. It is only for intuition purpose, so the accuracy might be not ideal. Here we want to ensure to use libraries as low as possible
 
 ## Training Overview
-##Training a neural network typically consists of two phases:
+### Training a neural network typically consists of two phases:
 
 - A forward phase, where the input is passed completely through the network.
 - A backward phase, where gradients are backpropagated (backprop) and weights are updated.
